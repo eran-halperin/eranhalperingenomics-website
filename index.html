@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI in Medicine &amp; Genomics Lab — Eran Halperin, NYU</title>
+  <meta name="description" content="The AI in Medicine and Genomics Lab at NYU, led by Professor Eran Halperin. Research in computational genomics, clinical AI, and machine learning in medicine." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon: replace images/favicon.png with your own -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<header id="navbar">
+  <div class="container">
+    <a href="#home" class="nav-logo">
+      <!-- Replace images/logo.png with your lab logo file -->
+      <img src="images/logo.png" alt="AMG Lab Logo" onerror="this.style.display='none'" />
+      AMG Lab
+    </a>
+
+    <!-- Hamburger for mobile -->
+    <div id="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+
+    <nav id="main-nav">
+      <a href="#home">Home</a>
+      <a href="#research">Research</a>
+      <a href="#members">Members</a>
+      <a href="#software">Software &amp; Repos</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="cvHalperin032026.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HOME / HERO
+     ============================================================ -->
+<section id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-logo-row">
+          <div class="hero-logo-inline">
+            <img src="images/logo.png" alt="AMG Lab" onerror="this.style.display='none'" />
+          </div>
+          <div class="hero-logo-info">
+            <p>Eran Halperin, PhD</p>
+            <p>Computer Science Department, Courant Institute, NYU</p>
+            <p>Division of Precision Medicine, Langone, NYU</p>
+            <a href="cvHalperin032026.pdf" target="_blank" rel="noopener" class="hero-cv-link">Eran Halperin's CV &rarr;</a>
+          </div>
+        </div>
+        <h1>AI in Medicine &amp; Genomics Lab</h1>
+        <p>
+          Our lab develops machine learning models and statistical approaches 
+          to improve detection and treatment of human disease. Our work spans different modalities, including
+          genomic data, medical imaging, electronic health records, and physiological
+          waveforms.
+        </p>
+      </div>
+      <div class="hero-publications">
+        <h2>Selected Publications</h2>
+        <ul>
+          <li><span class="pub-year">2025</span> Unico: a unified model for cell-type resolution genomics from heterogeneous omics data. <strong>Genome Biology.</strong></li>
+          <li><span class="pub-year">2025</span> Memorize and Rank: Elevating Large Language Models for Clinical Diagnosis Prediction <strong>AAAI.</strong></li>
+          <li><span class="pub-year">2024</span> Accurate prediction of disease-risk factors from volumetric medical scans by a deep vision model pre-trained with 2D scans. <strong>Nature Biomedical Engineering.</strong></li>
+          <li><span class="pub-year">2023</span> Understanding and Predicting the Effect of Environmental Factors on People with Type 2 Diabetes. <strong>CHIL.</strong></li>
+          <li><span class="pub-year">2022</span> Methylation risk scores are associated with a collection of phenotypes within electronic health record systems. <strong>Nature Genomics Medicine.</strong></li>
+          <li><span class="pub-year">2022</span> Extend and Explain: Interpreting Very Long Language Models. <strong>ML4H@Neurips</strong></li>
+          <li><span class="pub-year">2021</span> Imputation of the continuous arterial line blood pressure waveform from non-invasive measurements using deep learning. <strong>Scientific Reports.</strong></li>
+          <li><span class="pub-year">2021</span> Automated identification of clinical features from sparsely annotated 3-dimensional medical imaging. <strong>npj Digital Medicine.</strong></li>
+          <li><span class="pub-year">2020</span> Optimized design of single-cell RNA sequencing experiments for cell-type-specific eQTL analysis. <strong>Nature Communications.</strong></li>
+          <li><span class="pub-year">2020</span> Accurate estimation of cell composition in bulk expression through robust integration of single-cell information. <strong>Nature Communications.</strong></li>
+          <li><span class="pub-year">2020</span> Context-aware dimensionality reduction deconvolutes gut microbial community dynamics. <strong>Nature Biotechnology.</strong></li>
+          <li><span class="pub-year">2019</span> FEAST: fast expectation-maximization for microbial source tracking. <strong>Nature Methods.</strong></li>
+          <li><span class="pub-year">2019</span> Cell-type-specific resolution epigenetics without the need for cell sorting or single-cell biology. <strong>Nature Communications.</strong></li>
+          <li><span class="pub-year">2019</span> CONFINED: distinguishing biological from technical sources of variation by leveraging multiple methylation datasets. <strong>Genome Biology.</strong></li>
+          <li><span class="pub-year">2018</span> Detecting heritable phenotypes without a model using fast permutation testing for heritability and set-tests. <strong>Nature Communications.</strong></li>
+          <li><span class="pub-year">2018</span> BayesCCE: a Bayesian framework for estimating cell-type composition from DNA methylation without the need for methylation reference. <strong>Genome Biology.</strong></li>
+          <li><span class="pub-year">2017</span> Correcting for cell-type heterogeneity in DNA methylation: a comprehensive evaluation. <strong>Nature Methods.</strong></li>
+          <li><span class="pub-year">2016</span> Sparse PCA corrects for cell type heterogeneity in epigenome-wide association studies. <strong>Nature Methods.</strong></li>
+          <li><span class="pub-year">2016</span> Fast and accurate construction of confidence intervals for heritability. <strong>The American Journal of Human Genetics.</strong></li>
+          <li><span class="pub-year">2015</span> A genetic and socioeconomic study of mate choice in Latinos reveals novel assortment patterns. <strong>PNAS.</strong></li>
+          <li><span class="pub-year">2013</span> Identifying personal genomes by surname inference. <strong>Science.</strong></li>
+          <li><span class="pub-year">2012</span> A model-based approach for analysis of spatial structure in genetic data. <strong>Nature Genetics.</strong></li>
+          <li><span class="pub-year">2010</span> Genome-wide association study of follicular lymphoma identifies a risk locus at 6p21.32. <strong>Nature Genetics.</strong></li>
+          <li><span class="pub-year">2009</span> Genomic privacy and limits of individual detection in a pool. <strong>Nature Genetics.</strong></li>
+          <li><span class="pub-year">2009</span> Maximizing power in association studies. <strong>Nature Biotechnology.</strong></li>
+          <li><span class="pub-year">2008</span> Estimating local ancestry in admixed populations. <strong>The American Journal of Human Genetics.</strong></li>
+        </ul>
+        <a href="https://scholar.google.com/citations?hl=en&user=bpDPt1QAAAAJ" target="_blank" rel="noopener" class="hero-pub-link">Full publication list on Google Scholar &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     RESEARCH
+     ============================================================ -->
+<section id="research">
+  <div class="container">
+    <h2 class="section-title">Research</h2>
+
+    <div class="research-topics">
+      <span class="topic-tag">Computational Genomics</span>
+      <span class="topic-tag">Machine Learning in Medicine</span>
+      <span class="topic-tag">Deep Learning</span>
+      <span class="topic-tag">Algorithms</span>
+      <span class="topic-tag">Epigenomics</span>
+      <span class="topic-tag">Single-Cell Analysis</span>
+      <span class="topic-tag">Clinical AI</span>
+    </div>
+
+    <div class="research-cards">
+      <div class="research-card">
+        <h3>Cell-Type Specific &amp; Clinical Genomics</h3>
+        <p>
+          We develop deconvolution and dimensionality reduction methods for analyzing
+          methylation and RNA expression data at cell-type resolution, working on
+          bulk tissue samples without requiring cell sorting or single-cell biology.
+          We also develop methods for microbiome data, including microbial source
+          tracking and community analysis. Examples of our work include TCA and
+          ReFACTor (cell-type deconvolution of methylation data), Bisque (RNA
+          deconvolution), and FEAST (microbial source tracking).
+        </p>
+        <br />
+        <p>
+          <strong>Data types:</strong> methylation, RNA expression,
+          single-cell/nucleus analysis, microbiome.
+        </p>
+      </div>
+
+      <div class="research-card">
+        <h3>Clinical AI</h3>
+        <p>
+          We build computational frameworks that support clinical decision-making
+          in ophthalmology, anesthesiology, and acute medicine. Our approaches
+          combine statistical methods with modern deep learning architectures
+          applied to medical imaging, electronic health records, and
+          physiological waveforms.
+        </p>
+        <br />
+        <p>
+          <strong>Data types:</strong> OCT, MRI, ultrasound, CT, EHR, ECG, PPG,
+          arterial blood pressure waveforms.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     MEMBERS
+     ============================================================ -->
+<section id="members">
+  <div class="container">
+    <h2 class="section-title">Members</h2>
+
+    <div class="members-grid">
+
+      <div class="member-card">
+        <div class="member-photo"><img src="images/members/eran-halperin.jpg" alt="Eran Halperin" /></div>
+        <div class="member-name">Eran Halperin, PhD</div>
+        <div class="member-title">
+          Professor<br />
+          Dept. of Computer Science, Courant Institute<br />
+          Dept. of Precision Medicine, NYU Langone
+        </div>
+        <a href="https://scholar.google.com/citations?hl=en&user=bpDPt1QAAAAJ"
+           target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo"><img src="images/members/michal-sadowski.jpg" alt="Michal Sadowski" /></div>
+        <div class="member-name">Michal Sadowski, PhD</div>
+        <div class="member-title">Post-doctoral Researcher</div>
+        <a href="https://scholar.google.com/citations?user=APgiP1AAAAAJ&hl=en"
+           target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo"><img src="images/members/johnson_chen.jpg" alt="Zeyuan Chen" /></div>
+        <div class="member-name">Zeyuan (Johnson) Chen</div>
+        <div class="member-title">PhD Student</div>
+        <a href="https://scholar.google.com/citations?user=WBEabXUAAAAJ&hl=en"
+           target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo"><img src="images/members/ulzee-an.jpg" alt="Ulzee An" /></div>
+        <div class="member-name">Ulzee An</div>
+        <div class="member-title">PhD Student</div>
+        <a href="https://scholar.google.com/citations?hl=en&user=ydRNvI8AAAAJ"
+           target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ============================================================
+     SOFTWARE
+     ============================================================ -->
+<section id="software">
+  <div class="container">
+    <h2 class="section-title">Software and Repositories</h2>
+
+    <p class="software-section-label">Actively Maintained</p>
+    <div class="software-grid">
+
+      <div class="software-card">
+        <h3>FEAST</h3>
+        <p>Fast expectation-maximization for microbial source tracking.</p>
+        <a href="https://github.com/cozygene/FEAST" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>ReFACTor</h3>
+        <p>Corrects for cell-type heterogeneity in whole-genome methylation studies (EWAS).</p>
+        <a href="https://github.com/cozygene/refactor" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>TCA</h3>
+        <p>Deconvolution method for cell-type specific analysis of DNA methylation data.</p>
+        <a href="https://github.com/cozygene/TCA" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>Bisque</h3>
+        <p>Inference of cell-type composition in heterogeneous tissues using RNA-seq data.</p>
+        <a href="https://github.com/cozygene/bisque" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>MTV-LMM</h3>
+        <p>Analysis and prediction of temporal microbiome data using linear mixed models.</p>
+        <a href="https://github.com/cozygene/MTV-LMM" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>CONFINED</h3>
+        <p>Distinguishes biological from technical sources of variation using multiple methylation datasets.</p>
+        <a href="https://github.com/cozygene/CONFINED" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>MRS Weights</h3>
+        <p>Methylation risk scores (MRS) derived from UCLA electronic health records, predicting associations with medications, lab results, and medical conditions from DNA methylation patterns.</p>
+        <a href="https://github.com/cozygene/EHR_MRS_UCLA" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>ALBI &amp; FIESTA</h3>
+        <p>ALBI estimates the distribution of heritability estimators using a bootstrap approach. FIESTA is its faster successor, constructing accurate confidence intervals for heritability using stochastic approximation.</p>
+        <a href="https://github.com/cozygene/albi" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>Unico</h3>
+        <p>Decomposes bulk genomic data into cell-type-specific components, representing samples as a 3D tensor to enable cell-type resolution across diverse genomic assays.</p>
+        <a href="https://github.com/cozygene/Unico" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>SLIViT</h3>
+        <p>A data-efficient deep learning framework for measuring disease-related risk factors in volumetric biomedical imaging scans (MRI, OCT, ultrasound, CT).</p>
+        <a href="https://github.com/cozygene/SLIViT" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+      <div class="software-card">
+        <h3>GLINT</h3>
+        <p>User-friendly command-line tool for fast genome-wide DNA methylation (EWAS) analysis. Includes ReFACTor, EPIStructure, LMM association testing, and reference-based cell-type estimation.</p>
+        <a href="https://github.com/cozygene/glint/releases" target="_blank" rel="noopener">GitHub &rarr;</a>
+      </div>
+
+    </div>
+
+    <p class="software-section-label">Maintained Elsewhere</p>
+    <div class="software-grid">
+
+      <div class="software-card">
+        <h3>GEVALT</h3>
+        <p>Selects the most predictive tag SNPs. Maintained by Ron Shamir's group.</p>
+      </div>
+
+      <div class="software-card">
+        <h3>RECYCLER</h3>
+        <p>Detects plasmids from de-novo assembly graphs. Maintained by Ron Shamir's group.</p>
+      </div>
+
+    </div>
+
+    <p class="software-section-label">Retired</p>
+    <div class="software-retired">
+      <p>
+        SecureGenome &bull; SEQEM &bull; CAMP &bull; WHAP &bull; LOCO-LD &bull; SPA &bull; BARCODE &bull; LAMP &bull; LAMP-LD
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     NEWS
+     ============================================================ -->
+<section id="news">
+  <div class="container">
+    <h2 class="section-title">News</h2>
+
+    <ul class="news-list">
+
+      <li class="news-item">
+        <span class="news-date">Jan 2026</span>
+        <span class="news-text">Our lab is moving to NYU.</span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Jan 2026</span>
+        <span class="news-text">
+          Elior Rahmani, former student, starts assistant professor position at Stanford University.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Jul 2025</span>
+        <span class="news-text">
+          The Computational Genomics Summer Institute (CGSI), co-founded by Eran Halperin, celebrates 10 years: <a href="https://compmed.ucla.edu/news/269" target="_blank" rel="noopener">UCLA's Computational Genomics Summer Institute Celebrates 10 Years of Building Research Community</a>.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Sep 2025</span>
+        <span class="news-text">
+          Regev Schweiger, former student, starts assistant professor position at Tel-Aviv University.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Oct 2024</span>
+        <span class="news-text">
+          NVIDIA blog features SLIViT: <a href="https://developer.nvidia.com/blog/ai-medical-imagery-model-offers-fast-cost-efficient-expert-analysis/" target="_blank" rel="noopener">AI Medical Imagery Model Offers Fast, Cost-Efficient Expert Analysis</a> — covering our AI model that analyzes 3D medical images to identify disease biomarkers faster and more accurately than human specialists.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Sep 2024</span>
+        <span class="news-text">
+          Bogdan Pasaniuc, former post-doc, becomes director of Center for Computational Biomedicine
+          at University of Pennsylvania.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Sep 2023</span>
+        <span class="news-text">
+          Liat Shenhav, former student, starts assistant professor at NYU.
+        </span>
+      </li>
+
+
+      <li class="news-item">
+        <span class="news-date">Aug 2020</span>
+        <span class="news-text">
+          UCLA Health features our COVID-19 resource projection tool: <a href="https://www.uclahealth.org/news/release/ucla-health-releases-system-for-projecting-hospital-resource-demands-during-covid-19-surge" target="_blank" rel="noopener">UCLA Health releases system for projecting hospital resource demands during COVID-19 surge</a> — a computational tool for predicting hospital bed and ventilator needs during COVID-19 surges, made publicly available for health systems nationwide.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Sep 2019</span>
+        <span class="news-text">
+          Noah Zaitlen, former post-doc, starts as a professor at UCLA.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">May 2016</span>
+        <span class="news-text">
+          Yedael Waldman publishes paper on the genetic history of Bene-Israel Indian Jews,
+          featured in Science Daily, Times of India, and Haaretz.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Nov 2015</span>
+        <span class="news-text">
+          Epigenetic differences research featured in Nature Reviews Genetics.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Oct 2015</span>
+        <span class="news-text">
+          PNAS paper on genome-based mate selection covered by NDTV, Daily Mail,
+          Business Standard, and Science Daily.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Jan 2013</span>
+        <span class="news-text">
+          Science paper on identifying personal genomes by surname inference featured on
+          the front page of Israeli newspaper Ha'aretz.
+        </span>
+      </li>
+
+      <li class="news-item">
+        <span class="news-date">Jul 2012</span>
+        <span class="news-text">
+          Israeli business newspaper The Marker featured Eran Halperin in its
+          "40 under 40" section.
+        </span>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-inner">
+
+      <div class="contact-info">
+        <p>
+          <strong>Eran Halperin</strong><br />
+          Professor, Department of Computer Science<br />
+          Courant Institute of Mathematical Sciences<br />
+          Research Professor, Division of Precision Medicine, NYU Langone Health
+        </p>
+        <p>
+          <strong>Email:</strong>
+          first + last @nyu.edu
+        </p>
+        <p>
+          <strong>Google Scholar:</strong>
+          <a href="https://scholar.google.com/citations?hl=en&user=bpDPt1QAAAAJ"
+             target="_blank" rel="noopener">Profile</a>
+        </p>
+      </div>
+
+      <div class="funding-section">
+        <h3>Funding</h3>
+        <p>
+          We thank the National Science Foundation and the National Institute of Health for their current support. We also thank the Israeli Science Foundation, the German-Israeli Science Foundation, IBM, the Blavatnik Research Foundation, the Juludan Research Foundation, the National Institute of Health, and The Edmond J. Safra Center for Bioinformatics for their support in the past, and hopefully in the future. 
+
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <p>
+    &copy; 2025 AI in Medicine &amp; Genomics Lab, NYU &mdash;
+    <a href="https://github.com/eranhalperingenomics/website" target="_blank" rel="noopener">GitHub</a>
+  </p>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
