@@ -332,6 +332,31 @@ section:nth-child(even) {
 }
 
 /* ---------- Members ---------- */
+.team-photo {
+  margin: 0 auto 36px;
+  width: 25%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: perspective(900px) rotateX(4deg) rotateY(-3deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.team-photo:hover {
+  transform: perspective(900px) rotateX(0deg) rotateY(0deg);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.team-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .members-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
