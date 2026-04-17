@@ -12,10 +12,7 @@ It replaces the previous Wix site at eranhalperingenomics.com.
 ## Where we left off
 - The site is fully built and live at eranhalperingenomics.com via GitHub Pages
 - DNS was updated in Wix to point to GitHub's servers (A records + CNAME)
-- HTTPS is not yet enforced — the SSL certificate was still being provisioned at end of session
-  - Once ready, run: `gh api repos/eran-halperin/eranhalperingenomics-website/pages --method PUT --input - <<'EOF'
-{"https_enforced":true}
-EOF`
+- HTTPS is enforced — SSL certificate issued, valid until 2026-07-15
 - The domain is registered through Wix — decision pending on whether to transfer to Namecheap or keep with Wix (~$15/year either way)
 - The old Wix site still exists but is no longer serving the domain
 
