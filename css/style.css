@@ -630,5 +630,11 @@ footer a {
 
   .hero-text h1 {
     font-size: 1.8rem;
+    white-space: normal;
+  }
+
+  .hero-publications ul {
+    max-height: none;
+    overflow-y: visible;
   }
 }
