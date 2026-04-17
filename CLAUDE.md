@@ -13,6 +13,7 @@ It replaces the previous Wix site at eranhalperingenomics.com.
 - The site is fully built and live at eranhalperingenomics.com via GitHub Pages
 - DNS was updated in Wix to point to GitHub's servers (A records + CNAME)
 - HTTPS is enforced — SSL certificate issued, valid until 2026-07-15
+- Mobile layout fixed: removed `white-space: nowrap` from hero h1, added `overflow-x: hidden` to body, made logo row wrap on narrow screens, and removed fixed height/scroll from publications panel on mobile
 - The domain is registered through Wix — decision pending on whether to transfer to Namecheap or keep with Wix (~$15/year either way)
 - The old Wix site still exists but is no longer serving the domain
 
