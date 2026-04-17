@@ -19,6 +19,7 @@ body {
   color: #2c2c2c;
   background: #fff;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 a {
@@ -155,7 +156,6 @@ section:nth-child(even) {
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 10px;
-  white-space: nowrap;
 }
 
 .hero-text .subtitle {
@@ -630,7 +630,14 @@ footer a {
 
   .hero-text h1 {
     font-size: 1.8rem;
-    white-space: normal;
+  }
+
+  .hero-logo-row {
+    flex-wrap: wrap;
+  }
+
+  .hero-logo-inline img {
+    height: 80px;
   }
 
   .hero-publications ul {
