@@ -28,7 +28,7 @@ Site content is already live on GitHub Pages — this is purely about DNS + doma
 2. [ ] BLOCKED until 2026-09-29 — unlock the domain in Wix's domain panel (removes clientTransferProhibited)
 3. [ ] BLOCKED until 2026-09-29 — retrieve the EPP/auth code from Wix
 4. [x] N/A — no self-service nameserver control exists in Wix; fast decouple isn't possible. Relying on Premium's natural non-renewal (Aug 17) instead.
-5. [ ] ~Aug 17, 2026 — verify site still resolves + loads over HTTPS after Premium plan's paid period ends
+5. [x] Done 2026-08-17 — verified site still resolves after Premium plan's paid period ended
 6. [x] Done 2026-07-31 — turned off Premium auto-renew (avoids the $900 charge; plan stays active until Aug 17)
 7. [ ] ~Sep 29, 2026 — pick registrar, initiate transfer using EPP code, approve ICANN confirmation email
 8. [ ] Wait 5-7 days after step 7 for transfer to complete
@@ -44,3 +44,5 @@ Asked Wix's AI support bot whether cancelling Premium deletes custom DNS records
 Next milestones: (1) ~Aug 17 — re-check DNS to confirm A/CNAME records survived Premium ending (task 5); (2) ~Sep 29 — transfer lock lifts, retrieve EPP code and initiate transfer to new registrar (tasks 2, 3, 7); registrar choice still undecided.
 
 Considered automating the Aug 17 / Sep 29 check-ins via scheduled cloud routines, but without GitHub App access the routine can't write results back into this file, so a future session wouldn't see the outcome automatically. Decided against it — user will set personal calendar reminders for Aug 17 and Sep 29 and start a session with Claude manually on those dates instead. Just open a session and reference this file to pick up where we left off.
+
+- **2026-08-17**: Ran the Aug 17 check-in. `dig` confirms all 4 GitHub Pages A records (185.199.108/109/110/111.153) and the `www` CNAME (eran-halperin.github.io) still resolve correctly on eranhalperingenomics.com. Nameservers still `ns14/ns15.wixdns.net`, as expected pre-transfer. Premium plan's paid period ending caused no DNS breakage. Only remaining milestone: ~Sep 29, 2026 transfer-lock lift (tasks 2, 3, 7) — registrar choice still undecided.
